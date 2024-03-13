@@ -1,0 +1,170 @@
+body{
+    background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header, footer{
+    text-align: center;
+    width: 400px;
+    /* Se incluye el auto para centrar el contenido automaticamente */
+    margin: 30px auto 0px auto; /* Se aplica un margen de 30px arriba y 0px abajo */
+    
+}
+
+main{
+    width: 1400px;
+    /* Se incluye el auto para centrar el contenido automaticamente */
+    margin: 30px auto 0px auto; 
+}
+
+form{
+    font-size: 18px;
+    display: flex; /* Flex de forma predeterminada alinea los elementos en row */
+    flex-direction: column; /* Alinea los elementos en column */
+    row-gap: 20px; /* Espacio entre los elementos */
+    font-size: 18px;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: #d6450c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 300;
+    color: #d6450c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+label{
+    /* Block alinea los elementos en column */
+    display: block; /* Hace que el label ocupe todo el ancho del contenedor */
+    margin-bottom: 10px;
+}
+
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(71, 71, 66);
+    margin-top: 10px;
+    
+}
+
+/* Clases */
+li{
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 45px; /* Quita el padding de la lista */
+    margin: 0; /* Quita el margen de la lista */
+    float: left; /* Hace que la lista se alinee a la derecha */
+    padding-bottom: 10px;
+}
+
+#shopItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+#contenedorCategoria{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 800px;
+    
+    
+}
+
+#categorias{
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border: 2px solid #e74504;
+    border-radius: 5px;
+    
+
+}
+#contenedorCarrito{
+    justify-content: center;
+}
+#carrito{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#carritoItem{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 435px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border: 2px solid #e74504;
+    border-radius: 5px;
+}
+
+#remDrop{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 2px solid #e74504;
+    border-radius: 5px;
+}
+
+#listaProductos li{
+   
+    /* Lista flote de forma vertical */
+    float: none;
+}
+
+#dropArea{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    border: 2px dashed #e74504;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+#error{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+

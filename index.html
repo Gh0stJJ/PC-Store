@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Store</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    
+</head>
+<body>
+    <!-- Cabecera-->
+    <header>
+        
+        <img src="Images/logo.png" alt="PC Shop logo" height="100">
+        
+    </header>
+    <!-- Fin cabecera-->
+    <!-- Pagina de compra-->
+    <main>
+        <div id="error"></div>
+        <!-- Items de la tienda-->
+        <div id="shopItems">
+            
+            <div id="contenedorCategoria">
+                <h1>Productos</h1>
+                <div id="categorias">
+                    <div>
+                        <h3>Procesadores</h3>
+                        <ul id="cpus">
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Gráficas</h3>
+                        <ul id="gpus">
+                        </ul>
+                    
+                    </div>
+                    <div>
+                        <h3>Memoria RAM</h3>
+                        <ul  id="ram">
+                        </ul>
+                    </div>
+                        
+                    <div>
+                        <h3>Placas base</h3>
+
+                        <ul id="motherboards">
+                        </ul>
+                        
+                    </div>
+                    <div>
+                        <h3>Almacenamiento</h3>
+                        <ul id="storage">
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div id="contenedorCarrito">
+                <h1>Carrito</h1>
+                <!-- Contenedor drag and drop que va creciendo almacenando productos-->
+                <div id="dropArea">
+                    <h2>Arrastra aquí los productos que quieras comprar</h2>
+                </div>
+                <div id="carrito">
+                    
+                    <div id="carritoItem">
+                        <h2>Carrito</h2>
+                        <span>Producto:</span>
+                        <ul id="listaProductos">
+                            
+                        </ul>
+                        <p id="total">Total: $0</p>
+                    </div>
+                   
+                   <!-- delete drop area-->
+                    <div id="remDrop">
+                        <img src="Images/delete.png"  id="delete" height="60" draggable="false">
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!-- Fin items de la tienda-->
+        <!-- Carrito-->
+        
+        <!-- Fin carrito-->
+
+
+        
+
+    </main>
+    <!-- Fin Página compra-->
+
+    <!-- Pie de página-->
+    <footer>
+        
+        <p>ECorp PC component shop</p>
+        
+    </footer>
+    <!-- Fin pie de página-->
+    <!-- Scripts (Se incluyen al final para que no bloquee al HTML)-->
+    <script src="JS/user_data.js"></script>
+    <script src="JS/app.js"></script>
+
+    
+    
+</body>
+</html>
