@@ -151,7 +151,8 @@ function cargandoCarrito(){
             newitem.appendChild(cantidadP);
             newitem.appendChild(price);
             listaProductos.appendChild(newitem);
-            auxPrice+=parseInt(item.precio.substring(1))*item.cantidad;
+            //cargamos el precio total del localStorage
+            auxPrice = parseInt(localStorage.getItem('totalPrice'));
         }
         totalPrice.textContent = 'Total: $'+auxPrice;
     }
@@ -227,6 +228,8 @@ function addCompra(e){
 
     //Guardamos la lista en el localStorage
     localStorage.setItem('listaCompra',JSON.stringify(listaCompra));
+    //Guardamos el precio total en el localStorage
+    localStorage.setItem('totalPrice',auxPrice);
 
 
 }
@@ -250,7 +253,7 @@ function deleteItem(e){
         //Buscamos la cantidad
         let cantidad = parseInt(listaCompra[itemIndex].cantidad);
         //Buscamos el precio del producto
-        let precio = document.getElementById('item'+id).nextSibling.nextSibling.nextSibling.textContent;
+        let precio = listaCompra[itemIndex].precio;
 
         //Si la cantidad es 1, eliminamos el elemento
         if(cantidad == 1){
@@ -269,6 +272,11 @@ function deleteItem(e){
         precio = parseInt(precio.substring(1));
         auxPrice-=precio;
         totalPrice.textContent = 'Total: $'+auxPrice;
+
+        //Guardamos la lista en el localStorage
+        localStorage.setItem('listaCompra',JSON.stringify(listaCompra));
+        //Guardamos el precio total en el localStorage
+        localStorage.setItem('totalPrice',auxPrice);
     }
     
 }
@@ -295,7 +303,11 @@ function domReady(){
     listaProductos = document.getElementById('listaProductos');
 
     //Cargamos los productos en el DOM
+    //Cargando productos
     cargandoProductos();
+
+    //Cargamos la lista de la compra desde el localStorage
+    cargandoCarrito();
     //Elementos del drag and drop
     for(let item of Pcitems){
         item.addEventListener('dragstart',moviendoImg);
