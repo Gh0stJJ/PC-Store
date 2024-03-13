@@ -9,7 +9,7 @@ header, footer{
     text-align: center;
     width: 400px;
     /* Se incluye el auto para centrar el contenido automaticamente */
-    margin: 30px auto 0px auto; /* Se aplica un margen de 30px arriba y 0px abajo */
+    margin: 30px auto 10px auto; /* Se aplica un margen de 30px arriba y 0px abajo */
     
 }
 
@@ -58,7 +58,7 @@ p{
     
 }
 
-/* Clases */
+
 li{
     list-style-type: none; /* Quita los puntos de la lista */
     padding-left: 45px; /* Quita el padding de la lista */
@@ -66,7 +66,7 @@ li{
     float: left; /* Hace que la lista se alinee a la derecha */
     padding-bottom: 10px;
 }
-
+/*IDs*/
 #shopItems{
     display: flex;
     flex-direction: row;
@@ -156,7 +156,7 @@ li{
     margin-bottom: 20px;
 }
 
-
+/* Error que no se implemento */
 #error{
     text-align: center;
     color: red;
